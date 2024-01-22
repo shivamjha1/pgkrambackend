@@ -324,14 +324,14 @@
     signal-exit "^3.0.3"
     tslib "1.9.3"
 
-"@pm2/js-api@~0.6.7":
-  version "0.6.7"
-  resolved "https://registry.yarnpkg.com/@pm2/js-api/-/js-api-0.6.7.tgz#ed28c3b7b6d26f03f826318754fdc5468afa589f"
+"@pm2/js-api@~0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@pm2/js-api/-/js-api-0.8.0.tgz#d1b8aff562dd34befa3cb30fe28e08c9f9743abc"
   dependencies:
     async "^2.6.3"
-    axios "^0.21.0"
     debug "~4.3.1"
     eventemitter2 "^6.3.1"
+    extrareqp2 "^1.0.0"
     ws "^7.0.0"
 
 "@pm2/pm2-version-check@latest":
@@ -707,7 +707,7 @@ aws4@^1.8.0:
   version "1.8.0"
   resolved "https://registry.npmjs.org/aws4/-/aws4-1.8.0.tgz"
 
-axios@^0.21.0, axios@^0.21.1:
+axios@^0.21.1:
   version "0.21.1"
   resolved "https://registry.npmjs.org/axios/-/axios-0.21.1.tgz"
   dependencies:
@@ -808,10 +808,6 @@ boolbase@~1.0.0:
 boolean@1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/boolean/-/boolean-1.0.0.tgz"
-
-boolean@^3.0.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/boolean/-/boolean-3.1.2.tgz#e30f210a26b02458482a8cc353ab06f262a780c2"
 
 boxen@^4.2.0:
   version "4.2.0"
@@ -1030,9 +1026,9 @@ cheerio@^0.22.0:
     lodash.reject "^4.4.0"
     lodash.some "^4.4.0"
 
-chokidar@^3.2.2, chokidar@^3.5.1:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.2.tgz#dba3976fcadb016f66fd365021d91600d01c1e75"
+chokidar@^3.2.2, chokidar@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
   dependencies:
     anymatch "~3.1.2"
     braces "~3.0.2"
@@ -1310,11 +1306,9 @@ coveralls@^3.0.0:
     minimist "^1.2.5"
     request "^2.88.2"
 
-cron@1.8.2:
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/cron/-/cron-1.8.2.tgz#4ac5e3c55ba8c163d84f3407bde94632da8370ce"
-  dependencies:
-    moment-timezone "^0.5.x"
+croner@~4.1.92:
+  version "4.1.97"
+  resolved "https://registry.yarnpkg.com/croner/-/croner-4.1.97.tgz#6e373dc7bb3026fab2deb0d82685feef20796766"
 
 cross-env@^7.0.3:
   version "7.0.3"
@@ -1384,7 +1378,11 @@ datauri@^2.0.0:
     image-size "^0.7.3"
     mimer "^1.0.0"
 
-dayjs@^1.8.16, dayjs@~1.8.24, dayjs@~1.8.25:
+dayjs@^1.8.16, dayjs@~1.11.5:
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.10.tgz#68acea85317a6e164457d6d6947564029a6a16a0"
+
+dayjs@~1.8.24:
   version "1.8.36"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.36.tgz#be36e248467afabf8f5a86bae0de0cdceecced50"
 
@@ -1959,6 +1957,12 @@ extend@~3.0.2:
   version "3.0.2"
   resolved "https://registry.npmjs.org/extend/-/extend-3.0.2.tgz"
 
+extrareqp2@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/extrareqp2/-/extrareqp2-1.0.0.tgz#aaf8ad1495d723f71276b0eab041c061aa21f035"
+  dependencies:
+    follow-redirects "^1.14.0"
+
 extsprintf@1.3.0, extsprintf@^1.2.0:
   version "1.3.0"
   resolved "https://registry.npmjs.org/extsprintf/-/extsprintf-1.3.0.tgz"
@@ -1978,12 +1982,6 @@ fast-json-stable-stringify@^2.0.0:
 fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.6:
   version "2.0.6"
   resolved "https://registry.npmjs.org/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz"
-
-fast-printf@^1.3.0:
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/fast-printf/-/fast-printf-1.6.5.tgz#0feb44390cf85da97a70295b47d060f172914e4f"
-  dependencies:
-    boolean "^3.0.2"
 
 fast-safe-stringify@^2.0.4:
   version "2.0.6"
@@ -2084,6 +2082,10 @@ fn.name@1.x.x:
 follow-redirects@^1.10.0:
   version "1.13.1"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.13.1.tgz"
+
+follow-redirects@^1.14.0:
+  version "1.15.5"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.5.tgz#54d4d6d062c0fa7d9d17feb008461550e3ba8020"
 
 foreground-child@^2.0.0:
   version "2.0.0"
@@ -3408,7 +3410,7 @@ module-details-from-path@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/module-details-from-path/-/module-details-from-path-1.0.3.tgz"
 
-moment-timezone@^0.5.13, moment-timezone@^0.5.x:
+moment-timezone@^0.5.13:
   version "0.5.33"
   resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.33.tgz#b252fd6bb57f341c9b59a5ab61a8e51a73bbd22c"
   dependencies:
@@ -3979,9 +3981,15 @@ picomatch@^2.2.1:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
 
-pidusage@2.0.21, pidusage@^2.0.21:
+pidusage@^2.0.21:
   version "2.0.21"
   resolved "https://registry.yarnpkg.com/pidusage/-/pidusage-2.0.21.tgz#7068967b3d952baea73e57668c98b9eaa876894e"
+  dependencies:
+    safe-buffer "^5.2.1"
+
+pidusage@~3.0:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/pidusage/-/pidusage-3.0.2.tgz#6faa5402b2530b3af2cf93d13bcf202889724a53"
   dependencies:
     safe-buffer "^5.2.1"
 
@@ -4056,36 +4064,36 @@ pm2-sysmonit@^1.2.8:
     tx2 "~1.0.4"
 
 pm2@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/pm2/-/pm2-5.1.0.tgz#96afd4fcfeaf8739eef7f796115d3a014d5aa574"
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/pm2/-/pm2-5.3.1.tgz#f4c1b1199aac2988e9079ca4f127adaa1a5d18ce"
   dependencies:
     "@pm2/agent" "~2.0.0"
     "@pm2/io" "~5.0.0"
-    "@pm2/js-api" "~0.6.7"
+    "@pm2/js-api" "~0.8.0"
     "@pm2/pm2-version-check" latest
     async "~3.2.0"
     blessed "0.1.81"
     chalk "3.0.0"
-    chokidar "^3.5.1"
+    chokidar "^3.5.3"
     cli-tableau "^2.0.0"
     commander "2.15.1"
-    cron "1.8.2"
-    dayjs "~1.8.25"
+    croner "~4.1.92"
+    dayjs "~1.11.5"
     debug "^4.3.1"
     enquirer "2.3.6"
     eventemitter2 "5.0.1"
-    fast-printf "^1.3.0"
     fclone "1.0.11"
     mkdirp "1.0.4"
     needle "2.4.0"
-    pidusage "2.0.21"
+    pidusage "~3.0"
     pm2-axon "~4.0.1"
     pm2-axon-rpc "~0.7.1"
     pm2-deploy "~1.0.2"
     pm2-multimeter "^0.1.2"
     promptly "^2"
     semver "^7.2"
-    source-map-support "0.5.19"
+    source-map-support "0.5.21"
+    sprintf-js "1.1.2"
     vizion "~2.2.1"
     yamljs "0.3.0"
   optionalDependencies:
@@ -4809,9 +4817,9 @@ socks@^2.3.3:
     ip "^1.1.5"
     smart-buffer "^4.1.0"
 
-source-map-support@0.5.19:
-  version "0.5.19"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
+source-map-support@0.5.21:
+  version "0.5.21"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.21.tgz#04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f"
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -4855,7 +4863,7 @@ spdx-license-ids@^1.0.2:
   version "1.2.2"
   resolved "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz"
 
-sprintf-js@^1.1.2:
+sprintf-js@1.1.2, sprintf-js@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.1.2.tgz"
 
